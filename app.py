@@ -15,7 +15,20 @@ with open("dialogues.json", "r", encoding="utf-8") as f:
     dialogues = json.load(f)
 
 dialogue = st.selectbox("🗣️ Select a Telugu Movie Dialogue", dialogues)
-region = st.selectbox("🌍 Select Your Region", ["Telangana", "Rayalaseema", "Coastal Andhra", "Other"])
+region = st.selectbox(
+    "🌍 Select Your Region",
+    [
+        "Telangana",
+        "Rayalaseema",
+        "Coastal Andhra",
+        "Uttarandhra (North Coastal)",
+        "Godavari Region",
+        "Guntur/Palnadu",
+        "Nellore/Prakasam",
+        "Hyderabad Mix",
+        "Other / NRI Telugu"
+    ]
+)
 
 # Removed text area for user input
 # st.subheader("✍️ Type Your Dialogue")
