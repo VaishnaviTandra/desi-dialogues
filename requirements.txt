@@ -1,4 +1,4 @@
 streamlit
 pandas
-git+https://github.com/stefanrmmr/streamlit_audio_recorder.git
+# git+https://github.com/stefanrmmr/streamlit_audio_recorder.git
 

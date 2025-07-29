@@ -3,7 +3,7 @@ import pandas as pd
 import json
 import os
 from datetime import datetime
-from streamlit_audio_recorder.st_audiorec import st_audiorec  # Import the audio recorder
+from streamlit_audio_recorder.st_audiorec import st_audiorec
 import uuid
 
 st.set_page_config(page_title="Desi Dialogues 🎙️", layout="centered")
@@ -36,6 +36,7 @@ region = st.selectbox(
 
 st.subheader("🎤 Record Your Voice")
 audio_data = st_audiorec()
+
 if audio_data is not None:
     st.audio(audio_data, format='audio/wav')
 
